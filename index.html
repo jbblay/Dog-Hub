@@ -15,6 +15,9 @@
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -29,9 +32,9 @@
 
       <!-- Nav Bar -->
 
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" >
 
-        <a class="navbar-brand" href="">tindog</a>
+        <a class="navbar-brand" href="" data-aos="fade-right" data-aos-delay="400" >tindog</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
@@ -60,12 +63,12 @@
       <div class="row">
 
         <div class="col-lg-6">
-          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+          <h1 class="big-heading" data-aos="fade-right" data-aos-delay="400">Meet new and interesting dogs nearby.</h1>
           <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" >
           <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
 
@@ -80,22 +83,22 @@
 
   <section class="white-section" id="features">
 
-    <div class="container-fluid">
+    <div class="container-fluid" >
 
       <div class="row">
-        <div class="feature-box col-lg-4">
+        <div class="feature-box col-lg-4" data-aos="zoom-in-right" data-aos-delay="400"  >
           <i class="icon fas fa-check-circle fa-4x"></i>
           <h3 class="feature-title">Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p>
         </div>
 
-        <div class="feature-box col-lg-4">
+        <div class="feature-box col-lg-4" data-aos="zoom-in-right" data-aos-delay="600">
           <i class="icon fas fa-bullseye fa-4x"></i>
           <h3 class="feature-title">Elite Clientele</h3>
           <p>We have all the dogs, the greatest dogs.</p>
         </div>
 
-        <div class="feature-box col-lg-4">
+        <div class="feature-box col-lg-4" data-aos="zoom-in-right" data-aos-delay="800">
           <i class="icon fas fa-heart fa-4x"></i>
           <h3 class="feature-title">Guaranteed to work.</h3>
           <p>Find the love of your dog's life or your money back.</p>
@@ -111,9 +114,9 @@
 
   <section class="colored-section" id="testimonials">
 
-    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active container-fluid">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" >
+      <div class="carousel-inner" >
+        <div class="carousel-item active container-fluid"  data-bs-interval="10000">
           <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
           <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York</em>
@@ -137,11 +140,15 @@
 
   <!-- Press -->
 
-  <section class="colored-section" id="press">
-    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
-    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
-    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+  <section class="colored-section" id="press" >
+    <img class="press-5ogo" data-aos="fade-up"
+  data-aos-duration="4000"  src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" data-aos="fade-up"
+  data-aos-duration="3000" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" data-aos="fade-up"
+  data-aos-duration="2000" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" data-aos="fade-up"
+  data-aos-duration="1000" src="images/mashable.png" alt="mashable-logo">
 
   </section>
 
@@ -155,12 +162,16 @@
 
     <div class="row">
 
-      <div class="pricing-column col-lg-4 col-md-6">
+      <div class="pricing-column col-lg-4 col-md-6" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" >
             <h3>Chihuahua</h3>
           </div>
-          <div class="card-body">
+          <div class="card-body" >
             <h2 class="price-text">Free</h2>
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
@@ -170,7 +181,9 @@
         </div>
       </div>
 
-      <div class="pricing-column col-lg-4 col-md-6">
+      <div class="pricing-column col-lg-4 col-md-6"data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000" >
         <div class="card">
           <div class="card-header">
             <h3>Labrador</h3>
@@ -185,7 +198,9 @@
         </div>
       </div>
 
-      <div class="pricing-column col-lg-4">
+      <div class="pricing-column col-lg-4" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000" >
         <div class="card">
           <div class="card-header">
             <h3>Mastiff</h3>
@@ -213,11 +228,11 @@
 
   <section class="colored-section" id="cta">
 
-    <div class="container-fluid">
+    <div class="container-fluid" >
 
-      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
-      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
-      <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+      <h3 class="big-heading" >Find the True Love of Your Dog's Life Today.</h3>
+      <button class="download-button btn btn-lg btn-dark" data-aos="zoom-out-left" data-aos-duration="800" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg brn-light" data-aos="zoom-out-right" data-aos-duration="800" type="button"><i class="fab fa-google-play"></i> Download</button>
     </div>
   </section>
 
@@ -234,6 +249,15 @@
     </div>
   </footer>
 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init({
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true,
+  });
+</script>
 
 </body>
 
